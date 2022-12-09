@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+
+    <title>Подача заявления СКФУ</title>
+
+    <link rel="stylesheet" href="css/styleNull.css">
+    <link rel="stylesheet" href="css/styleMain.css">
+    <link rel="stylesheet" href="css/styleAdaptation.css">
+
+    <link rel="icon" href="img/favicon.png">
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img src="img/logo.png" alt="">
+      </div>
+      <div class="entry">
+        <a href="https://ecampus.ncfu.ru/account/login?returnUrl=%2FHome%2FRestorePassword">Войти</a>
+      </div>
+    </div>
+    <div class="mainmenu">
+      <nav>
+        <a class="selected" href="index.html">Подать заявление</a>
+        <a href="passwordReset.html">Сбросить пароль</a>
+      </nav>
+      <div class="burger">
+
+      </div>
+      <div class="burger_window">
+        <div class="selected">
+          <a class="" href="index.html">Подать заявление</a>
+        </div>
+        <div class="">
+          <a href="passwordReset.html">Сбросить пароль</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="for_statement_1">
+        <h1>Подача заявления</h1>
+        <section class="for_statement section_status section_active">
+          <p>Вы можете сохранять результаты заполнения заявления в браузере, чтобы в случае необходимости продолжить заполнение с последнего успешного шага, или сохранить его в браузере без отправки на сервер СКФУ.</p>
+        </section>
+        <section class="for_statement section_status section_active">
+          <p>После отправки заявления вcе данные из браузера будут удалены.</p>
+        </section>
+        <section class="for_statement section_status warning">
+          <p>Данные в заявку следует вводить строго так как они указаны в документах! <br>Сокращения не допускаются!</p>
+        </section>
+
+        <div class="statement_start">
+          Приступить к заполнению
+        </div>
+      </div>
+
+      <div class="for_statement_2 for_statement_none">
+        <h2>Общие сведения</h2>
+        <hr>
+        <form class="" action="index.html" method="post">
+          <div class="student_container">
+            <div class="">
+              <div class="block_label">
+                <label class="necessary">Фамилия</label>
+              </div>
+              <input type="text" required name="surname" placeholder="Иванов" >
+            </div>
+            <div class="">
+              <div class="block_label">
+                <label class="necessary">Имя</label>
+              </div>
+              <input type="text" required name="name" placeholder="Иван">
+            </div>
+            <div class="">
+              <div class="block_label">
+                <label>Отчество</label>
+              </div>
+              <input type="text" name="patronymic" placeholder="Иванович">
+            </div>
+            <div class="">
+              <div class="block_label">
+                <label class="necessary">Пол</label>
+              </div>
+              <select class="" name="gender">
+                <option value="man">Мужской</option>
+                <option value="woman">Женский</option>
+              </select>
+            </div>
+            <div class="">
+              <div class="block_label">
+                <label class="necessary">Дата рождения</label>
+              </div>
+              <input type="date" name="date" required>
+            </div>
+
+            <h2>Место рождения</h2>
+            <hr>
+            <div class="">
+              <div class="block_label">
+                <label class="necessary">Страна</label>
+              </div>
+              <input type="text" name="country" placeholder="Российская Федерация" required>
+            </div>
+
+            <div class="">
+              <div class="block_label">
+                <label class="">Край/Область</label>
+              </div>
+              <input type="text" name="region">
+            </div>
+
+            <div class="">
+              <div class="block_label">
+                <label class="">Район</label>
+              </div>
+              <input type="text" name="region2">
+            </div>
+
+            <div class="">
+              <div class="block_label">
+                <label class="necessary">Город</label>
+              </div>
+              <input type="text" name="city" required>
+            </div>
+
+            <div class="">
+              <div class="block_label">
+                <label class="necessary">Добавьте фото</label>
+              </div>
+              <input type="file" name="photo" required>
+            </div>
+
+          </div>
+          <div class="warning_error">
+            <p>Допустимые расширения файлов: jpg, jpeg <br>
+              Загрузить можно 1 pdf файл, или не более 10 файлов других форматов.<br>
+              Максимальный размер файла: 20 Мб
+            <br><br>
+            Файлы будут загружены на сервер после нажатия кнопки "Далее"
+            Необходимо загрузить не более одного файла или фотографии
+            <br><br>
+            Требования к фотографии:
+            <ul>
+            <li>Цветное фото;</li>
+            <li>Изображение лица должно быть четким, строго в анфас и без головного убора;</li>
+            <li>Фотография с головным убором, который не скрывает черты лица, допустимы для лиц, религиозные убеждения которых не позволяют им появляться перед посторонними гражданами без головного убора;</li>
+            <li>Мимика лица должна быть естественной, не искажающей черты лица;</li>
+            </ul>
+          </p>
+          </div>
+
+          <div class="block_button">
+            <button type="submit" name="button">Далее</button>
+          </div>
+        </form>
+      </div>
+
+
+
+
+    </div>
+
+    <script src="js/scriptStatement.js"></script>
+  </body>
+</html>
